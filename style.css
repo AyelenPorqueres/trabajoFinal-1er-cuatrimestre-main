@@ -15,6 +15,10 @@ body {
 
 }
 
+::-webkit-scrollbar {
+    display: none; 
+}
+
 
 .colornav {
     background-color: #CCDFB6;
