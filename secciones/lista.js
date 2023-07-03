@@ -18,7 +18,8 @@ document.getElementById("botoninputs").addEventListener("click", () => {
        
        <button class="botoneliminar botoneliminartareacont" onclick="eliminarTarea(event)" ><i class="fa-solid fa-trash-can" style="color: #ea1010;"></i></button>
     </div>`
-      //preguntamos si el campo de tarea esta vacio, en caso de que si se muestra el error en pantalla
+      
+    //preguntamos si el campo de tarea esta vacio, en caso de que si se muestra el error en pantalla
     if (tarea.value == "") {
         document.getElementById("error-tareavacia").innerHTML = "Se debe ingresar una tarea";
 
@@ -55,7 +56,7 @@ const agregarAtributoCheck = (event) => {
     if (checkbox.hasAttribute("checked") == false) {
         checkbox.setAttribute("checked", "true");
     } else {
-        checkbox.removeAttibute("checked");
+        checkbox.removeAttribute("checked");
     }
 }
 

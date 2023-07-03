@@ -11,6 +11,8 @@
 </head>
 
 <body>
+   
+    <!-- Inicio de la nabvar -->
 
     <header>
         <nav class="navbar navbar-expand-lg  colornav">
@@ -51,45 +53,51 @@
         </nav>
     </header>
 
-    <section id="galeriafunciones" class="contenedorgaleriafunciones">
-        <div class="contenedorfunciones row">
-            <div class="col-lg-3">
-                <img src="../img/notas.jpg" class="img-thumbnail" alt="imagen de diferentes notas">
-                <p> Añade notas, tareas y marca las completadas. Personaliza cada una con temas y
-                    colores para una mejor visualización. </p>
-            </div>
-            <div class="col-lg-3">
-                <img src="../img/alarma.jpg" class="img-thumbnail" alt="imagen de una alarma">
-                <p> Para cada tarea tendrás la posibilidad de establecer una alarma. </p>
-            </div>
-            <div class="col-lg-3">
-                <img src="../img/calendarioo.jpg" class="img-thumbnail" alt="imagen de un calendario">
-                <p> Sincronización con el calendario de google para que puedas programar y planificar de manera más
-                    sencilla y rápida cada evento que tengas a futuro.</p>
-            </div>
-            <div class="col-lg-3">
-                <img src="../img/icono-email.jpg" class="img-thumbnail" alt="imagen de un icono de email ">
-                <p> Al registarse a través de e-mail incluye la opción de recibir notificaciones y novedades. </p>
-            </div>
-            <div class="col-lg-3">
-                <img src="../img/habitos.jpg" class="img-thumbnail" alt="imagen de habitos">
-                <p> Gestiona hábitos para mayor productividad. </p>
-            </div>
-            <div class="col-lg-3">
-                <img src="../img/imgcompartir.jpg" class="img-thumbnail"
-                    alt="imagen de un hombre compartiendo sus tareas con otras personas">
-                <p> Comparte tus notas con tu familia, amigos y compañeros de trabajo.</p>
-            </div>
-            <div class="col-lg-3">
-                <img src="../img/notificacion.jpg" class="img-thumbnail" alt="imagen de una campana de notificación">
-                <p> Recibe un recordatorio de tus tareas. </p>
-            </div>
-            <div class="col-lg-3">
-                <img src="../img/categorias.jpg" class="img-thumbnail" alt="imagen de diferentes iconos de categorias">
-                <p> Agrega diferentes categorias.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Inicio del formulario de registro-->
+
+    <main>
+        <section class="registro">
+
+
+            <form id="mi-cuenta">
+                <fieldset>
+                    <h2 class="titulo2"> CREA UNA CUENTA </h2>
+
+                    <small id="error-nombre-cuenta" class="mensaje-error resetear"></small>
+
+                    <input class="micuenta" type="text" placeholder="Ingrese su nombre" name="nombres"
+                        id="nombres-cuenta" required>
+
+                    <small id="error-apellido-cuenta" class="mensaje-error resetear"></small>
+                    <input class="micuenta" type="text" placeholder="Ingrese su apellido" name="apellidos"
+                        id="apellidos-cuenta" required>
+
+                    <small id="error-usuario-cuenta" class="mensaje-error resetear"></small>
+
+                    <input class="micuenta" type="text" placeholder="Ingrese su usuario" name="usuario"
+                        id="usuario-cuenta" required>
+
+                    <small id="error-contrasenia-cuenta" class="mensaje-error resetear"></small>
+
+                    <input class="micuenta" type="password" placeholder="Ingrese su contrasenia" name="contraseña"
+                        id="contrasenia-cuenta" required>
+
+                    <small id="error-email-cuenta" class="mensaje-error resetear"></small>
+
+                    <input class="micuenta" type="email" placeholder="Ingrese su correo" name="usuario"
+                        id="correo-cuenta" required>
+                    <button id="boton-enviar-cuenta" class="boton btn btn-secondary" type="submit"
+                        value="Registrar">REGISTRARSE</button>
+                    <p class="iniciosesion">¿Tenés cuenta? Inicia sesión </p>
+                </fieldset>
+            </form>
+
+
+
+        </section>
+    </main>
+   
+    <!-- Inicio del footer -->
 
     <footer>
 
@@ -104,8 +112,11 @@
         </div>
 
     </footer>
+    
+   <!-- Scripts -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="micuenta.js"> </script>
 </body>
