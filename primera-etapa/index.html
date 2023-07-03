@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title> Be organized!</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg  colornav">
+            <div class="container-fluid">
+                <a class="navbar-brand collapse navbar-collapse menu" id="navbarResponsive" href="index.html">
+                    <img src="img/logo1.png" alt="Logo" width="300" height="150" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="./secciones/funciones.html">FUNCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./secciones/lista.html">LISTA DE
+                                TAREAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./secciones/micuenta.html">MI
+                                CUENTA</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="galeriaprincipal" class="containergaleria">
+        <div class="contenedorimagenes row">
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="img/estudio.jpg" class="figure-img img-fluid rounded"
+                        alt="imagen de planificacion de estudio">
+                    <figcaption class="figure-caption fw-bold ">PLANIFICA TUS HORARIOS DE ESTUDIO</figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="img/familia.jpg" class="figure-img img-fluid rounded" alt="imagen de una familia">
+                    <figcaption class="figure-caption fw-bold">ORGANIZA TU VIDA FAMILIAR</figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="img/objetivos.jpg" class="figure-img img-fluid rounded"
+                        alt="imagen de objetivos personales">
+                    <figcaption class="figure-caption fw-bold">DETERMINA TUS OBJETIVOS </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="img/supermercado.jpg" class="figure-img img-fluid rounded"
+                        alt="imagen de un supermercado">
+                    <figcaption class="figure-caption fw-bold">REALIZA UNA LISTA PARA EL SUPERMERCADO</figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="img/trabajo.jpg" class="figure-img img-fluid rounded" alt="imagen de empresa laboral">
+                    <figcaption class="figure-caption fw-bold">CREA UN CALENDARIO LABORAL CON TU EMPRESA</figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure class="figure">
+                    <img src="img/vidapersonal.jpg" class="figure-img img-fluid rounded"
+                        alt="imagen de planificacion de rutinas">
+                    <figcaption class="figure-caption fw-bold">PLANIFICA TU RUTINA DIARIA, TURNOS Y MUCHO MÁS
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <main class="text-main">
+        <section>
+            <h1 class="titulo">¿QUE ES BE ORGANIZED?</h1>
+            <div class="parrafo">
+                <p>
+                    Be organized es una aplicación web diseñada para mejorar tu organización personal, familiar y/o
+                    laboral. En la misma podras crear tareas, dividirla en categorias, establecer recordatorios e
+                    incluso
+                    tendras un calendario para visualizarlas de manera más rápida y sencilla.
+                    Incluye una opción para poder compartila con tu familia, amigos o compañeros de trabajo a traves de
+                    e-mail, al cual le llegaran las notificaciones de las tareas a realizar.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <section class="contacto1" id="contacto">
+
+        <h1 class="contactanos__titulo--md titulocontacto"> CONTÁCTANOS </h1>
+        <!-- Inicia el form -->
+
+        <form id="contactos">
+            <fieldset>
+                <legend class="mensaje">DATOS PERSONALES</legend>
+
+                <small id="error-nombre" class="mensaje-error"></small>
+
+                <input class="contacto" type="text" placeholder="Ingrese su nombre" name="nombre" id="nombre" required>
+                <small id="error-apellido" class="mensaje-error"></small>
+
+                <input class="contacto" type="text" placeholder="Ingrese su apellido" name="apellido" id="apellido"
+                    required>
+                <small id="error-email" class="mensaje-error"></small>
+                <input class="contacto " type="text" placeholder="Ingrese su email" name="email" id="email" required>
+
+
+
+                <label class="mensaje" for="mensaje">DEJA TU MENSAJE</label> <br>
+                <textarea class="textarea" name="mensaje" id="mensaje" cols="85" rows="10"></textarea>
+                <button class="botones btn btn-secondary " type="reset" value="Cancelar">CANCELAR</button>
+                <button id="boton-enviar" class="botones btn btn-secondary " type="submit  "
+                    value="Enviar">ENVIAR</button>
+            </fieldset>
+
+        </form>
+
+
+
+    </section>
+    <footer>
+
+        <h2> REDES SOCIALES</h2>
+        <div>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://img.icons8.com/ios/50/000000/facebook--v1.png" alt="icono de facebook"
+                    class="pie__icon--sm" /> </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="icono de instagram"
+                    class="pie__icon--sm" /></a>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./secciones/contacto.js"> </script>
+</body>
